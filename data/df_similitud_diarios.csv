@@ -1,0 +1,101 @@
+"","document1","document2","cosine"
+"1","ambito","Cristina Kirchner",0.37600280158178
+"2","casarosada","Cristina Kirchner",0.24209883645223
+"3","clarin","Cristina Kirchner",0.35530168818883
+"4","diariodeleuco","Cristina Kirchner",0.39172302812463
+"5","eldestape","Cristina Kirchner",0.38680012274647
+"6","infobae","Cristina Kirchner",0.37188377809067
+"7","lanacion","Cristina Kirchner",0.36071330199571
+"8","paginadoce","Cristina Kirchner",0.38642717551347
+"9","perfil","Cristina Kirchner",0.39974954520927
+"10","todonoticias","Cristina Kirchner",0.30210071838048
+"11","ambito","Daniel Scioli",0.24058959313376
+"12","casarosada","Daniel Scioli",0.22150171535579
+"13","clarin","Daniel Scioli",0.20726045484077
+"14","diariodeleuco","Daniel Scioli",0.21781683807872
+"15","eldestape","Daniel Scioli",0.24484270030959
+"16","infobae","Daniel Scioli",0.23668537270532
+"17","lanacion","Daniel Scioli",0.2153700400318
+"18","paginadoce","Daniel Scioli",0.24131136079174
+"19","perfil","Daniel Scioli",0.24467566094459
+"20","todonoticias","Daniel Scioli",0.1720776332251
+"21","ambito","Horacio Rodríguez Larreta",0.46636366373512
+"22","casarosada","Horacio Rodríguez Larreta",0.38521348555262
+"23","clarin","Horacio Rodríguez Larreta",0.43684491451847
+"24","diariodeleuco","Horacio Rodríguez Larreta",0.45375048775686
+"25","eldestape","Horacio Rodríguez Larreta",0.45871202125071
+"26","infobae","Horacio Rodríguez Larreta",0.45804519703563
+"27","lanacion","Horacio Rodríguez Larreta",0.45364493390205
+"28","paginadoce","Horacio Rodríguez Larreta",0.45249445398261
+"29","perfil","Horacio Rodríguez Larreta",0.46673333627368
+"30","todonoticias","Horacio Rodríguez Larreta",0.3616089797091
+"31","ambito","Javier Milei",0.33975935988172
+"32","casarosada","Javier Milei",0.1508940332307
+"33","clarin","Javier Milei",0.32633017158679
+"34","diariodeleuco","Javier Milei",0.31795904054721
+"35","eldestape","Javier Milei",0.33887035803682
+"36","infobae","Javier Milei",0.35036582486264
+"37","lanacion","Javier Milei",0.34211991595781
+"38","paginadoce","Javier Milei",0.33305281580706
+"39","perfil","Javier Milei",0.35837418046648
+"40","todonoticias","Javier Milei",0.30052248766287
+"41","ambito","Juan Grabois",0.45047265083032
+"42","casarosada","Juan Grabois",0.22746175478516
+"43","clarin","Juan Grabois",0.44296524325156
+"44","diariodeleuco","Juan Grabois",0.39540892390843
+"45","eldestape","Juan Grabois",0.43607210175396
+"46","infobae","Juan Grabois",0.42824707667466
+"47","lanacion","Juan Grabois",0.44465503807854
+"48","paginadoce","Juan Grabois",0.4592657477917
+"49","perfil","Juan Grabois",0.47094900990192
+"50","todonoticias","Juan Grabois",0.38820913738791
+"51","ambito","Myriam Bregman",0.47603005910971
+"52","casarosada","Myriam Bregman",0.22643386202456
+"53","clarin","Myriam Bregman",0.46291999295774
+"54","diariodeleuco","Myriam Bregman",0.38622643155736
+"55","eldestape","Myriam Bregman",0.48411520432368
+"56","infobae","Myriam Bregman",0.47702528734298
+"57","lanacion","Myriam Bregman",0.46621643336611
+"58","paginadoce","Myriam Bregman",0.4834564805652
+"59","perfil","Myriam Bregman",0.47757365072464
+"60","todonoticias","Myriam Bregman",0.41190572963036
+"61","ambito","Nicolas del Caño",0.45413229917423
+"62","casarosada","Nicolas del Caño",0.20545570157717
+"63","clarin","Nicolas del Caño",0.43399775438252
+"64","diariodeleuco","Nicolas del Caño",0.38500204843094
+"65","eldestape","Nicolas del Caño",0.44835813531484
+"66","infobae","Nicolas del Caño",0.45524686689451
+"67","lanacion","Nicolas del Caño",0.43495423534424
+"68","paginadoce","Nicolas del Caño",0.45455462593169
+"69","perfil","Nicolas del Caño",0.45118662790657
+"70","todonoticias","Nicolas del Caño",0.37609777427463
+"71","ambito","Patricia Bullrich",0.51010735262703
+"72","casarosada","Patricia Bullrich",0.39337797819431
+"73","clarin","Patricia Bullrich",0.48409510046021
+"74","diariodeleuco","Patricia Bullrich",0.48968766445999
+"75","eldestape","Patricia Bullrich",0.4874098060114
+"76","infobae","Patricia Bullrich",0.50097212126733
+"77","lanacion","Patricia Bullrich",0.50552112484547
+"78","paginadoce","Patricia Bullrich",0.50723340414629
+"79","perfil","Patricia Bullrich",0.52313893701558
+"80","todonoticias","Patricia Bullrich",0.40235068618392
+"81","ambito","Sergio Massa",0.34662838285879
+"82","casarosada","Sergio Massa",0.21894412411587
+"83","clarin","Sergio Massa",0.30732558406067
+"84","diariodeleuco","Sergio Massa",0.31814127347804
+"85","eldestape","Sergio Massa",0.34967597373567
+"86","infobae","Sergio Massa",0.34875202593154
+"87","lanacion","Sergio Massa",0.33240844904377
+"88","paginadoce","Sergio Massa",0.34715262483381
+"89","perfil","Sergio Massa",0.34385669697305
+"90","todonoticias","Sergio Massa",0.25970450349803
+"91","ambito","Wado de Pedro",0.43557547059399
+"92","casarosada","Wado de Pedro",0.26790887618346
+"93","clarin","Wado de Pedro",0.40920660066841
+"94","diariodeleuco","Wado de Pedro",0.43880908087093
+"95","eldestape","Wado de Pedro",0.44984391840299
+"96","infobae","Wado de Pedro",0.42164685904634
+"97","lanacion","Wado de Pedro",0.41943466696065
+"98","paginadoce","Wado de Pedro",0.44056782697843
+"99","perfil","Wado de Pedro",0.45672468577732
+"100","todonoticias","Wado de Pedro",0.35573291486691
