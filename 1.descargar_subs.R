@@ -5,67 +5,40 @@ library(reticulate)
 library(googlesheets4)
 
 options(scipen = 999)
+
+# DESCARGO SUBTITULOS -----------------------
+
+# Link del debate
  
-# 1 - levanto lista de links ####
-df_links<-read_sheet(ss = "https://docs.google.com/spreadsheets/d/1vLeXj6CqiYcJNAFtH9KPXoOi2OrL0mALBkkD7CSShjc/edit#gid=0",
-                     sheet =  "Hoja 1")
+link <- "https://www.youtube.com/watch?v=NLb9WkfrvUY" 
 
-df_links<-df_links%>%
-  filter(str_detect(link, "youtube"))
-
-## creo lista de links para descargar subs ####
-lista_links<-unique(df_links$link)
-
-
-## creo los df vacios para el loop ####
-df_subtitulos<-data.frame()
-lista_links_sin_subs<-c()
-
-## loopeo ####
 tictoc::tic()
-for (link in lista_links) {
 
-  print(paste0("voy por el link ", link)) #para que en consola me diga qué link está levantando
-  
-  # genero un trycatch para quedarme con links de los que no pude descargar subs
-  tryCatch({
-    
-    sub_1<-get_caption(url = link, language = "es")
-    
-    df_subtitulos<-rbind(df_subtitulos, sub_1)
-    
-    },
-    
-    error = function(e){
-      
-      lista_links_sin_subs<<-c(lista_links_sin_subs, link)
-      print(e)
-      
-    })
-    
-  
-  
-}
+# Me traigo los subtitulos del debate
+sub_1<- get_caption(url = link, language = "es")
+
+# Cierra tictoc
 tictoc::toc()
 
-# me fijo cuántos links pude descargar
-length(unique(df_subtitulos$vid))
+# Guardo subtitulos
+write.csv(sub_1, file = "data/subtitulos.csv", row.names = FALSE)
 
-#guardo la data por las dudas
-write.csv(df_subtitulos, "./data/df_subtitulos3.csv", fileEncoding = "UTF-8", row.names = F)
 
-#creo un df con los links que no pude descargar, 
-#luego corro el loop de vuelta pero reemplazo la lista_links por lista_links_sin_subs
-df_sin_subs<-df_links%>%
-  filter(link%in%lista_links_sin_subs)
 
-lista_links_sin_subs<-unique(df_sin_subs$link)
+# Identificar: 
+## Los momentos donde hablan de los temas
 
-# guardo toda la info
-df_sub1<-read.csv("./data/df_subtitulos2.csv", fileEncoding = "UTF-8")
-df_sub2<-read.csv("./data/df_subtitulos3.csv", fileEncoding = "UTF-8")
-df_sub<-rbind(df_sub1, df_sub2)
-length(unique(df_sub$vid))
+# A) economía, inflación y trabajo; 
+# B) rol del estado y conflictividad social 
+# C) política de seguridad, defensa y justicia
+
+## Ver los tiempos en los que habla cada candidato
+
+
+# FILTRO POR INTERVALOS ----------------------------
+
+# Crear columna con tópico y candidato
+
 
 # 2 - filtro los intervalos que me interesan ####
  
