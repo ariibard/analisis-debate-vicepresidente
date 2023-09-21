@@ -1,8 +1,10 @@
+
+
 library(tidyverse)
-library(lubridate)
 library(youtubecaption)
 library(reticulate)
 library(googlesheets4)
+library(reticulate)
 
 options(scipen = 999)
 
@@ -23,7 +25,10 @@ tictoc::toc()
 # Guardo subtitulos
 write.csv(sub_1, file = "data/subtitulos.csv", row.names = FALSE)
 
-
+#importo subtitulos
+library(readr)
+subtitulos <- read_csv("data/subtitulos.csv")
+View(subtitulos)
 
 # Identificar: 
 ## Los momentos donde hablan de los temas
