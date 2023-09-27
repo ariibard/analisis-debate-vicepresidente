@@ -21,4 +21,4 @@ df_final <- bind_rows(dfs)
 
 # Guardo
 
-write.csv(df_final, 'data/notis_09-2023.csv')
+write.csv(df_final, 'data/bases/0-notis-09-2023.csv')
