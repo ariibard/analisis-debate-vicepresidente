@@ -1,5 +1,6 @@
 # Carga el paquete dplyr
 library(dplyr)
+library(readr)
 
 # Especifica la carpeta donde se encuentran tus archivos CSV
 carpeta <- "noticias"
@@ -17,8 +18,18 @@ for (archivo in archivos) {
 }
 
 # Combina todos los DataFrames en uno solo
-df_final <- bind_rows(dfs)
-
+df_final <- bind_rows(dfs) 
 # Guardo
 
-write.csv(df_final, 'data/bases/0-notis-09-2023.csv')
+write.csv(df_final, 'data/bases/0-notis-0809-2023.csv')
+
+
+# Importo el csv final 
+notis <- read_csv("data/bases/0-notis-0809-2023.csv") |> 
+  select(-...1)
+
+notis <- notis |> 
+  mutate(id_noticia = 1:nrow(notis)) |> 
+  select(id_noticia, everything())
+
+write.csv(notis, 'data/bases/0-notis-0809-2023.csv', row.names = FALSE)

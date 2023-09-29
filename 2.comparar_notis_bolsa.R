@@ -1,9 +1,18 @@
+
+################## SETEO LIBRERIAS ##########################################
+
 library(tidyverse)
 library(tidytext)
 library(stringi)
 library(stopwords)
 library(quanteda)
 library(quanteda.textstats)
+
+####################### CARGO BASES ############################################
+
+notis_economia <- read_csv("data/bases/01-noticias-filtro-economia.csv") 
+notis_estado <- read_csv("data/bases/01-noticias-filtro-estado.csv") 
+notis_seguridad <- read_csv("data/bases/01-noticias-filtro-seguridad.csv") 
 
 options(scipen = 999)
 

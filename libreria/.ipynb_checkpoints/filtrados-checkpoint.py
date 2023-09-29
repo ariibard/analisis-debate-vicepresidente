@@ -36,6 +36,15 @@ def filtrar_noticias(lista_terminos, noticias_csv):
         print(str(i) + ' de ' + total)
         # oraciones = list(nlp(texto).sents)
         # for oracion in oraciones:
+        # Verifica si el valor en la columna 'texto' es un NaN o None
+        #if pd.isna(texto):
+            # si es NAN omite la fila
+          #  i += 1
+           # continue
+    
+    # Convierte el valor numérico a una cadena de texto
+        #if isinstance(texto, (int, float)):
+         #   texto = str(texto)
         
         # Filtro de noticias basado en la cantidad de coincidencias 
         if len(texto.strip()) == 0 or len(texto.strip()) < 10: #Comprueba si el texto esta en blanco o tiene menos de 10 caracteres
@@ -86,6 +95,6 @@ def filtrar_noticias(lista_terminos, noticias_csv):
         df.rbind(fila)
         
         # contador de noticias para saber por donde va
-        i += 1
+        #i += 1
 
     return df # Me devuelve el df
